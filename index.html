@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KwanzaControl</title>
+  <style>
+ /* KwanzaControl - visual moderno */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f1f5f3;
+    color: #1f2937;
+    line-height: 1.6;
+    padding: 20px;
+    margin: 0;
+}
+
+header {
+    background: linear-gradient(135deg, #087443, #064e36);
+    color: white;
+    padding: 28px;
+    border-radius: 18px;
+    margin-bottom: 24px;
+    box-shadow: 0 8px 24px rgba(6, 78, 54, 0.12);
+}
+
+header h1 {
+    font-size: clamp(26px, 4vw, 36px);
+    margin-top: 0;
+}
+
+main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 24px;
+}
+
+input,
+select {
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid #d5dfd8;
+    border-radius: 10px;
+    font: inherit;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid #16834a;
+    outline-offset: 1px;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    background: #087443;
+    color: white;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #065c36;
+}
+
+#lista {
+    background: white;
+    padding: 16px;
+    border-radius: 14px;
+    border: 1px solid #e3ebe5;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    header {
+        padding: 20px;
+        border-radius: 14px;
+    }
+
+    input,
+    select,
+    button {
+        max-width: 100%;
+          .cards {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .card .valor {
+    font-size: 24px;
+  }
+    }
+}
+    body {
+      font-family: Arial, sans-serif;
+      background: #f1f5f3;
+      color: #17352d;
+      margin: 0;
+      padding: 25px;
+    }
+
+    header {
+      background: #14543e;
+      color: white;
+      padding: 25px;
+      border-radius: 12px;
+    }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+    margin-top: 30px;
+    align-items: stretch;
+} 
+.card {
+    background: #ffffff;
+    padding: 26px;
+    border-radius: 18px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.card p {
+    color: #64748b;
+    margin-top: 0;
+    font-size: 14px;
+}
+
+.card .valor {
+    color: #087443;
+    font-size: 28px;
+    font-weight: 800;
+    margin-top: 10px;
+    letter-spacing: -0.5px;
+}
+
+     
+
+    
+    
+
+    form {
+      background: white;
+      padding: 20px;
+      margin-top: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    input, select, button {
+      padding: 12px;
+      margin: 5px 0;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    button {
+      background: #14543e;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    #movimentos {
+      background: white;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 12px;
+    }
+
+    .linha {
+      padding: 12px 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+
+    @media (min-width: 650px) {
+      form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+}
+    }
+  </style>
+</head>  
+<body>
+
+  <header>
+    <h1>KwanzaControl</h1>
+    <p>Controla o dinheiro do teu negócio.</p>
+  </header>
+
+  <main>
+    <h2>O meu negócio</h2>
+
+    <section class="cards">
+      <div class="card">
+        <p>Saldo atual</p>
+        <div class="valor" id="saldo">50 000 Kz</div>
+      </div>
+
+      <div class="card">
+        <p>Receitas</p>
+        <div class="valor" id="receitas">80 000 Kz</div>
+      </div>
+
+      <div class="card">
+        <p>Despesas</p>
+        <div class="valor" id="despesas">30 000 Kz</div>
+      </div>
+    </section>
+
+    <form id="formulario">
+      <input id="descricao" placeholder="Descrição" required>
+
+      <select id="tipo">
+        <option value="receita">Receita</option>
+        <option value="despesa">Despesa</option>
+      </select>
+
+      <input id="valor" type="number" min="1"
+        placeholder="Valor em Kz" required>
+
+      <button type="submit">Registar</button>
+    </form>
+
+    <section id="movimentos">
+      <h2>Movimentos recentes</h2>
+      <div id="lista">
+        <div class="linha">Venda inicial — 80 000 Kz</div>
+        <div class="linha">Compra de mercadoria — 30 000 Kz</div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    let receitas = 80000;
+    let despesas = 30000;
+    function guardarDados() {
+  localStorage.setItem("kc_receitas", receitas);
+  localStorage.setItem("kc_despesas", despesas);
+  localStorage.setItem(
+    "kc_movimentos",
+    document.getElementById("lista").innerHTML
+  );
+}
+
+function carregarDados() {
+  const r = localStorage.getItem("kc_receitas");
+  const d = localStorage.getItem("kc_despesas");
+  const m = localStorage.getItem("kc_movimentos");
+
+  if (r !== null) receitas = Number(r);
+  if (d !== null) despesas = Number(d);
+  if (m !== null) document.getElementById("lista").innerHTML = m;
+}
+
+    function formatar(valor) {
+      return valor.toLocaleString("pt-PT") + " Kz";
+    }
+
+    function atualizar() {
+      document.getElementById("saldo").textContent =
+        formatar(receitas - despesas);
+
+      document.getElementById("receitas").textContent =
+        formatar(receitas);
+
+      document.getElementById("despesas").textContent =
+        formatar(despesas);
+    }
+
+    document.getElementById("formulario")
+      .addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const descricao =
+          document.getElementById("descricao").value.trim();
+
+        const valor =
+          Number(document.getElementById("valor").value);
+
+        const tipo =
+          document.getElementById("tipo").value;
+
+        if (!descricao || !Number.isFinite(valor) || valor <= 0) {
+          alert("Introduz uma descrição e um valor válido.");
+          return;
+        }
+
+        if (tipo === "receita") {
+          receitas += valor;
+        } else {
+          despesas += valor;
+        }
+
+        const linha = document.createElement("div");
+        linha.style.borderLeft = tipo === "receita" ? "5px solid #16a34a" : "5px solid #dc2626";
+linha.style.paddingLeft = "12px";
+        linha.className = "linha";
+
+        const sinal = tipo === "receita" ? "+" : "−";
+        linha.textContent =
+          descricao + " — " + sinal + formatar(valor);
+
+        document.getElementById("lista").prepend(linha);
+guardarDados();
+        atualizar();
+        this.reset();
+      });
+function guardarDados() {
+  localStorage.setItem("kwanzaControl", JSON.stringify({
+    receitas: receitas,
+    despesas: despesas,
+    lista: document.getElementById("lista").innerHTML
+  }));
+}
+
+const dadosGuardados = localStorage.getItem("kwanzaControl");
+if (dadosGuardados) {
+  const dados = JSON.parse(dadosGuardados);
+  receitas = dados.receitas;
+  despesas = dados.despesas;
+  document.getElementById("lista").innerHTML = dados.lista;
+  atualizar();
+}
+  </script>
+</body>
+</html>
