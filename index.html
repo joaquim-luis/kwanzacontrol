@@ -5,161 +5,101 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KwanzaControl</title>
   <style>
- /* KwanzaControl - visual moderno */
-* {
-    box-sizing: border-box;
-}
+    * { box-sizing: border-box; }
 
-body {
-    font-family: "Segoe UI", Arial, sans-serif;
-    background: #f1f5f3;
-    color: #1f2937;
-    line-height: 1.6;
-    padding: 20px;
-    margin: 0;
-}
-
-header {
-    background: linear-gradient(135deg, #087443, #064e36);
-    color: white;
-    padding: 28px;
-    border-radius: 18px;
-    margin-bottom: 24px;
-    box-shadow: 0 8px 24px rgba(6, 78, 54, 0.12);
-}
-
-header h1 {
-    font-size: clamp(26px, 4vw, 36px);
-    margin-top: 0;
-}
-
-main {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-bottom: 24px;
-}
-
-input,
-select {
-    min-width: 0;
-    padding: 12px;
-    border: 1px solid #d5dfd8;
-    border-radius: 10px;
-    font: inherit;
-}
-
-input:focus,
-select:focus {
-    outline: 2px solid #16834a;
-    outline-offset: 1px;
-}
-
-button {
-    padding: 12px 20px;
-    border: none;
-    border-radius: 10px;
-    background: #087443;
-    color: white;
-    font: inherit;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-button:hover {
-    background: #065c36;
-}
-
-#lista {
-    background: white;
-    padding: 16px;
-    border-radius: 14px;
-    border: 1px solid #e3ebe5;
-    overflow-wrap: anywhere;
-}
-
-@media (max-width: 600px) {
     body {
-        padding: 12px;
-    }
-
-    header {
-        padding: 20px;
-        border-radius: 14px;
-    }
-
-    input,
-    select,
-    button {
-        max-width: 100%;
-          .cards {
-    grid-template-columns: 1fr;
-    gap: 15px;
-  }
-
-  .card {
-    padding: 20px;
-  }
-
-  .card .valor {
-    font-size: 24px;
-  }
-    }
-}
-    body {
-      font-family: Arial, sans-serif;
+      font-family: "Segoe UI", Arial, sans-serif;
       background: #f1f5f3;
       color: #17352d;
+      line-height: 1.6;
       margin: 0;
       padding: 25px;
     }
 
     header {
-      background: #14543e;
+      background: linear-gradient(135deg, #087443, #064e36);
       color: white;
-      padding: 25px;
-      border-radius: 12px;
+      padding: 28px;
+      border-radius: 18px;
+      margin-bottom: 24px;
+      box-shadow: 0 8px 24px rgba(6, 78, 54, 0.12);
     }
 
-  .cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 24px;
-    margin-top: 30px;
-    align-items: stretch;
-} 
-.card {
-    background: #ffffff;
-    padding: 26px;
-    border-radius: 18px;
-    border: 1px solid #e5e7eb;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
+    header h1 {
+      font-size: clamp(26px, 4vw, 36px);
+      margin-top: 0;
+    }
 
-.card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-}
+    main {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding-bottom: 24px;
+    }
 
-.card p {
-    color: #64748b;
-    margin-top: 0;
-    font-size: 14px;
-}
+    input, select {
+      min-width: 0;
+      padding: 12px;
+      margin: 5px 0;
+      width: 100%;
+      border: 1px solid #d5dfd8;
+      border-radius: 10px;
+      font: inherit;
+    }
 
-.card .valor {
-    color: #087443;
-    font-size: 28px;
-    font-weight: 800;
-    margin-top: 10px;
-    letter-spacing: -0.5px;
-}
+    input:focus, select:focus {
+      outline: 2px solid #16834a;
+      outline-offset: 1px;
+    }
 
-     
+    button {
+      padding: 12px 20px;
+      border: none;
+      border-radius: 10px;
+      background: #087443;
+      color: white;
+      font: inherit;
+      font-weight: 600;
+      cursor: pointer;
+    }
 
-    
-    
+    button:hover { background: #065c36; }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+      margin-top: 30px;
+      align-items: stretch;
+    }
+
+    .card {
+      background: #ffffff;
+      padding: 26px;
+      border-radius: 18px;
+      border: 1px solid #e5e7eb;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    .card p {
+      color: #64748b;
+      margin-top: 0;
+      font-size: 14px;
+    }
+
+    .card .valor {
+      color: #087443;
+      font-size: 28px;
+      font-weight: 800;
+      margin-top: 10px;
+      letter-spacing: -0.5px;
+    }
 
     form {
       background: white;
@@ -169,21 +109,6 @@ button:hover {
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     }
 
-    input, select, button {
-      padding: 12px;
-      margin: 5px 0;
-      width: 100%;
-      box-sizing: border-box;
-    }
-
-    button {
-      background: #14543e;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-
     #movimentos {
       background: white;
       padding: 20px;
@@ -191,45 +116,181 @@ button:hover {
       border-radius: 12px;
     }
 
+    #lista { overflow-wrap: anywhere; }
+
     .linha {
       padding: 12px 0;
       border-bottom: 1px solid #ddd;
     }
 
+    .data {
+      color: #64748b;
+      font-size: 13px;
+      margin-left: 8px;
+    }
 
-    @media (min-width: 650px) {
-      form {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 12px;
-}
+    .linha button {
+      width: auto;
+      margin-left: 8px;
+      padding: 6px 12px;
+    }
+
+    #relatorio {
+      background: white;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 12px;
+    }
+
+    .resumo {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 12px;
+      margin: 12px 0;
+    }
+
+    .resumo div {
+      background: #f1f5f3;
+      padding: 12px;
+      border-radius: 10px;
+    }
+
+    .resumo span { display: block; font-size: 13px; color: #64748b; }
+    .resumo strong { font-size: 20px; color: #087443; }
+
+    .barra-linha { margin: 8px 0; font-size: 14px; }
+
+    .barra {
+      height: 14px;
+      background: #087443;
+      border-radius: 7px;
+      margin-top: 3px;
+    }
+
+    .exportar { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 16px; }
+
+    .selo {
+      font-size: 12px;
+      font-weight: 600;
+      background: rgba(255, 255, 255, 0.2);
+      padding: 3px 10px;
+      border-radius: 999px;
+      vertical-align: middle;
+      margin-left: 8px;
+    }
+
+    #fecho {
+      background: white;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 12px;
+    }
+
+    .nota, .rodape { color: #64748b; font-size: 13px; }
+    .rodape { text-align: center; margin-top: 24px; }
+
+    @media print {
+      #fecho button { display: none !important; }
+    }
+
+    @media print {
+      form, .cards, .exportar, .filtros, .linha button { display: none !important; }
+      body { background: white; }
+      * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    }
+
+    @media (max-width: 600px) {
+      body { padding: 12px; }
+      header { padding: 20px; border-radius: 14px; }
+      .cards { grid-template-columns: 1fr; gap: 15px; }
+      .card { padding: 20px; }
+      .card .valor { font-size: 24px; }
     }
   </style>
-</head>  
+</head>
 <body>
 
   <header>
-    <h1>KwanzaControl</h1>
+    <h1>KwanzaControl <span class="selo">Versão gratuita</span></h1>
     <p>Controla o dinheiro do teu negócio.</p>
   </header>
 
-  <main>
+  <section id="cadastro" hidden>
+    <h2>Ficha de cadastro</h2>
+    <p>Preenche os teus dados para começar.</p>
+
+    <form id="fichaForm">
+      <label for="f_nome">Nome completo</label>
+      <input id="f_nome" type="text" required>
+
+      <label for="f_negocio">Nome do negócio</label>
+      <input id="f_negocio" type="text" required>
+
+      <label for="f_tipoNeg">Tipo de negócio</label>
+      <select id="f_tipoNeg" required>
+        <option value="">Escolhe...</option>
+        <option>Comércio / loja</option>
+        <option>Restaurante / comida</option>
+        <option>Serviços</option>
+        <option>Transporte / táxi</option>
+        <option>Agricultura</option>
+        <option>Salão / beleza</option>
+        <option>Outro</option>
+      </select>
+
+      <label for="f_tel">Telefone</label>
+      <input id="f_tel" type="tel" required>
+
+      <label for="f_prov">Província</label>
+      <select id="f_prov" required>
+        <option value="">Escolhe...</option>
+        <option>Luanda</option>
+        <option>Bengo</option>
+        <option>Benguela</option>
+        <option>Bié</option>
+        <option>Cabinda</option>
+        <option>Cuando</option>
+        <option>Cubango</option>
+        <option>Cuanza Norte</option>
+        <option>Cuanza Sul</option>
+        <option>Cunene</option>
+        <option>Huambo</option>
+        <option>Huíla</option>
+        <option>Icolo e Bengo</option>
+        <option>Lunda Norte</option>
+        <option>Lunda Sul</option>
+        <option>Malanje</option>
+        <option>Moxico</option>
+        <option>Moxico Leste</option>
+        <option>Namibe</option>
+        <option>Uíge</option>
+        <option>Zaire</option>
+      </select>
+
+      <label for="f_mun">Município (opcional)</label>
+      <input id="f_mun" type="text">
+
+      <button type="submit">Guardar e começar</button>
+    </form>
+  </section>
+
+  <main id="app" hidden>
     <h2>O meu negócio</h2>
 
     <section class="cards">
       <div class="card">
         <p>Saldo atual</p>
-        <div class="valor" id="saldo">50 000 Kz</div>
+        <div class="valor" id="saldo">0 Kz</div>
       </div>
 
       <div class="card">
         <p>Receitas</p>
-        <div class="valor" id="receitas">80 000 Kz</div>
+        <div class="valor" id="receitas">0 Kz</div>
       </div>
 
       <div class="card">
         <p>Despesas</p>
-        <div class="valor" id="despesas">30 000 Kz</div>
+        <div class="valor" id="despesas">0 Kz</div>
       </div>
     </section>
 
@@ -241,70 +302,392 @@ button:hover {
         <option value="despesa">Despesa</option>
       </select>
 
-      <input id="valor" type="number" min="1"
-        placeholder="Valor em Kz" required>
+      <select id="categoria"></select>
+
+      <select id="conta">
+        <option>Negócio</option>
+        <option>Pessoal</option>
+      </select>
+
+      <input id="valor" type="number" min="1" placeholder="Valor em Kz" required>
 
       <button type="submit">Registar</button>
     </form>
 
+    <section id="relatorio">
+      <h2>Resumo e filtros</h2>
+
+      <div class="filtros">
+        <label for="fMes">Mês (deixa vazio para ver todos)</label>
+        <input id="fMes" type="month">
+        <input id="fPesquisa" type="search" placeholder="Pesquisar movimentos...">
+        <select id="fCategoria"></select>
+        <select id="fConta">
+          <option value="">Todas as contas</option>
+          <option>Negócio</option>
+          <option>Pessoal</option>
+        </select>
+      </div>
+
+      <div class="resumo">
+        <div><span>Receitas</span><strong id="rReceitas">0 Kz</strong></div>
+        <div><span>Despesas</span><strong id="rDespesas">0 Kz</strong></div>
+        <div><span>Saldo</span><strong id="rSaldo">0 Kz</strong></div>
+      </div>
+
+      <div class="resumo">
+        <div><span>Saldo do negócio</span><strong id="rNegocio">0 Kz</strong></div>
+        <div><span>Saldo pessoal</span><strong id="rPessoal">0 Kz</strong></div>
+        <div><span>Previsão para 30 dias</span><strong id="rPrevisao">-</strong></div>
+      </div>
+      <p id="previsaoNota" class="nota"></p>
+
+      <h3>Despesas por categoria</h3>
+      <div id="grafico"></div>
+
+      <div class="exportar">
+        <button type="button" onclick="exportarExcel()">Exportar para Excel</button>
+        <button type="button" onclick="exportarPDF()">Exportar para PDF</button>
+      </div>
+    </section>
+
+    <section id="fecho">
+      <h2>Fecho diário</h2>
+      <p id="fechoResumo">Clica no botão para fechar o dia de hoje.</p>
+      <button type="button" onclick="fecharDia()">Fechar o dia de hoje</button>
+      <h3>Fechos anteriores</h3>
+      <div id="listaFechos"></div>
+    </section>
+
     <section id="movimentos">
       <h2>Movimentos recentes</h2>
-      <div id="lista">
-        <div class="linha">Venda inicial — 80 000 Kz</div>
-        <div class="linha">Compra de mercadoria — 30 000 Kz</div>
-      </div>
+      <div id="lista"></div>
     </section>
   </main>
 
+  <p class="rodape">Versão gratuita do KwanzaControl. Em breve: versão paga com mais funcionalidades.</p>
+
   <script>
-    let receitas = 80000;
-    let despesas = 30000;
-    function guardarDados() {
-  localStorage.setItem("kc_receitas", receitas);
-  localStorage.setItem("kc_despesas", despesas);
-  localStorage.setItem(
-    "kc_movimentos",
-    document.getElementById("lista").innerHTML
-  );
-}
-
-function carregarDados() {
-  const r = localStorage.getItem("kc_receitas");
-  const d = localStorage.getItem("kc_despesas");
-  const m = localStorage.getItem("kc_movimentos");
-
-  if (r !== null) receitas = Number(r);
-  if (d !== null) despesas = Number(d);
-  if (m !== null) document.getElementById("lista").innerHTML = m;
-}
+    let receitas = 0;
+    let despesas = 0;
+    let movimentos = [];
+    let fechos = [];
 
     function formatar(valor) {
       return valor.toLocaleString("pt-PT") + " Kz";
     }
 
     function atualizar() {
-      document.getElementById("saldo").textContent =
-        formatar(receitas - despesas);
+      document.getElementById("saldo").textContent = formatar(receitas - despesas);
+      document.getElementById("receitas").textContent = formatar(receitas);
+      document.getElementById("despesas").textContent = formatar(despesas);
+    }
 
-      document.getElementById("receitas").textContent =
-        formatar(receitas);
+    function guardarDados() {
+      localStorage.setItem("kwanzaControl", JSON.stringify({
+        receitas: receitas,
+        despesas: despesas,
+        movimentos: movimentos,
+        fechos: fechos
+      }));
+    }
 
-      document.getElementById("despesas").textContent =
-        formatar(despesas);
+    const CATEGORIAS = {
+      receita: ["Vendas", "Serviços", "Outras receitas"],
+      despesa: ["Compras / mercadoria", "Transporte", "Renda", "Salários", "Água / luz / internet", "Outras despesas"]
+    };
+
+    function preencherCategorias() {
+      const tipo = document.getElementById("tipo").value;
+      const sel = document.getElementById("categoria");
+      sel.innerHTML = "";
+      CATEGORIAS[tipo].forEach(function(c) {
+        const o = document.createElement("option");
+        o.textContent = c;
+        sel.appendChild(o);
+      });
+    }
+
+    function preencherFiltroCategorias() {
+      const sel = document.getElementById("fCategoria");
+      sel.innerHTML = "";
+      const todas = document.createElement("option");
+      todas.value = "";
+      todas.textContent = "Todas as categorias";
+      sel.appendChild(todas);
+      CATEGORIAS.receita.concat(CATEGORIAS.despesa, ["Sem categoria"]).forEach(function(c) {
+        const o = document.createElement("option");
+        o.textContent = c;
+        sel.appendChild(o);
+      });
+    }
+
+    function passaFiltro(m) {
+      const mes = document.getElementById("fMes").value;
+      const cat = document.getElementById("fCategoria").value;
+
+      if (mes) {
+        if (!m.data) return false;
+        const d = new Date(m.data);
+        const ym = d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0");
+        if (ym !== mes) return false;
+      }
+
+      if (cat && (m.categoria || "Sem categoria") !== cat) return false;
+
+      const conta = document.getElementById("fConta").value;
+      if (conta && (m.conta || "Negócio") !== conta) return false;
+
+      const q = document.getElementById("fPesquisa").value.trim().toLowerCase();
+      if (q) {
+        const texto = (m.descricao + " " + (m.categoria || "")).toLowerCase();
+        if (texto.indexOf(q) === -1) return false;
+      }
+
+      return true;
+    }
+
+    function renderResumo() {
+      const lista = movimentos.filter(passaFiltro);
+      let r = 0;
+      let d = 0;
+      const porCat = {};
+
+      lista.forEach(function(m) {
+        const v = Number(m.valor);
+        if (m.tipo === "receita") {
+          r += v;
+        } else {
+          d += v;
+          const c = m.categoria || "Sem categoria";
+          porCat[c] = (porCat[c] || 0) + v;
+        }
+      });
+
+      document.getElementById("rReceitas").textContent = formatar(r);
+      document.getElementById("rDespesas").textContent = formatar(d);
+      document.getElementById("rSaldo").textContent = formatar(r - d);
+      renderExtras();
+
+      const grafico = document.getElementById("grafico");
+      grafico.innerHTML = "";
+
+      const nomes = Object.keys(porCat).sort(function(a, b) {
+        return porCat[b] - porCat[a];
+      });
+
+      if (nomes.length === 0) {
+        grafico.textContent = "Sem despesas neste período.";
+        return;
+      }
+
+      const max = porCat[nomes[0]];
+
+      nomes.forEach(function(c) {
+        const linha = document.createElement("div");
+        linha.className = "barra-linha";
+
+        const nome = document.createElement("span");
+        nome.textContent = c + " - " + formatar(porCat[c]);
+
+        const barra = document.createElement("div");
+        barra.className = "barra";
+        barra.style.width = (porCat[c] / max * 100) + "%";
+
+        linha.appendChild(nome);
+        linha.appendChild(barra);
+        grafico.appendChild(linha);
+      });
+    }
+
+    function renderExtras() {
+      let neg = 0;
+      let pes = 0;
+
+      movimentos.forEach(function(m) {
+        const v = (m.tipo === "receita" ? 1 : -1) * Number(m.valor);
+        if ((m.conta || "Negócio") === "Pessoal") {
+          pes += v;
+        } else {
+          neg += v;
+        }
+      });
+
+      document.getElementById("rNegocio").textContent = formatar(neg);
+      document.getElementById("rPessoal").textContent = formatar(pes);
+
+      // Previsão básica: ritmo dos últimos 30 dias
+      const agora = new Date();
+      const limite = new Date(agora.getTime() - 30 * 24 * 60 * 60 * 1000);
+      let liquido = 0;
+      let maisAntigo = agora;
+
+      movimentos.forEach(function(m) {
+        if (!m.data) return;
+        const d = new Date(m.data);
+        if (d < limite) return;
+        liquido += (m.tipo === "receita" ? 1 : -1) * Number(m.valor);
+        if (d < maisAntigo) maisAntigo = d;
+      });
+
+      const nota = document.getElementById("previsaoNota");
+
+      if (maisAntigo === agora) {
+        document.getElementById("rPrevisao").textContent = "-";
+        nota.textContent = "Previsão: ainda não há movimentos com data nos últimos 30 dias.";
+        return;
+      }
+
+      const dias = Math.max(7, Math.ceil((agora - maisAntigo) / 86400000));
+      const previsto = (receitas - despesas) + (liquido / dias) * 30;
+
+      document.getElementById("rPrevisao").textContent = formatar(Math.round(previsto));
+      nota.textContent = "Estimativa simples: mantém o ritmo dos últimos " + dias + " dias. Não é garantia.";
+    }
+
+    function diaDe(data) {
+      const x = new Date(data);
+      return x.getFullYear() + "-" + String(x.getMonth() + 1).padStart(2, "0") + "-" + String(x.getDate()).padStart(2, "0");
+    }
+
+    function fecharDia() {
+      const dia = diaDe(new Date());
+      let r = 0;
+      let d = 0;
+      let n = 0;
+
+      movimentos.forEach(function(m) {
+        if (!m.data || diaDe(m.data) !== dia) return;
+        n++;
+        if (m.tipo === "receita") {
+          r += Number(m.valor);
+        } else {
+          d += Number(m.valor);
+        }
+      });
+
+      if (n === 0) {
+        alert("Hoje ainda não há movimentos para fechar.");
+        return;
+      }
+
+      fechos = fechos.filter(function(f) { return f.dia !== dia; });
+      fechos.push({ dia: dia, receitas: r, despesas: d, saldo: r - d, movimentos: n });
+
+      guardarDados();
+      mostrarFechos();
+    }
+
+    function mostrarFechos() {
+      const lista = document.getElementById("listaFechos");
+      lista.innerHTML = "";
+
+      const hoje = diaDe(new Date());
+      const f0 = fechos.find(function(f) { return f.dia === hoje; });
+
+      document.getElementById("fechoResumo").textContent = f0
+        ? "Hoje fechado: receitas " + formatar(f0.receitas) + ", despesas " + formatar(f0.despesas) + ", saldo do dia " + formatar(f0.saldo) + "."
+        : "Clica no botão para fechar o dia de hoje.";
+
+      fechos.slice().sort(function(a, b) {
+        return a.dia < b.dia ? 1 : -1;
+      }).forEach(function(f) {
+        const linha = document.createElement("div");
+        linha.className = "linha";
+        linha.textContent = f.dia.split("-").reverse().join("/") +
+          " - receitas " + formatar(f.receitas) +
+          ", despesas " + formatar(f.despesas) +
+          ", saldo " + formatar(f.saldo) +
+          " (" + f.movimentos + " mov.)";
+        lista.appendChild(linha);
+      });
+    }
+
+    function exportarExcel() {
+      const lista = movimentos.filter(passaFiltro);
+
+      if (lista.length === 0) {
+        alert("Não há movimentos para exportar.");
+        return;
+      }
+
+      const linhas = [["Data", "Descrição", "Tipo", "Categoria", "Conta", "Valor (Kz)"]];
+
+      lista.forEach(function(m) {
+        linhas.push([
+          m.data ? new Date(m.data).toLocaleDateString("pt-PT") : "",
+          m.descricao,
+          m.tipo,
+          m.categoria || "Sem categoria",
+          m.conta || "Negócio",
+          m.valor
+        ]);
+      });
+
+      const csv = linhas.map(function(l) {
+        return l.map(function(c) {
+          return '"' + String(c).replace(/"/g, '""') + '"';
+        }).join(";");
+      }).join("\r\n");
+
+      const blob = new Blob(["\uFEFF" + csv], { type: "text/csv;charset=utf-8;" });
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = "kwanzacontrol.csv";
+      a.click();
+    }
+
+    function exportarPDF() {
+      window.print();
+    }
+
+    function mostrarMovimentos() {
+      const lista = document.getElementById("lista");
+      lista.innerHTML = "";
+
+      movimentos.filter(passaFiltro).forEach(function(movimento) {
+        const linha = document.createElement("div");
+        linha.className = "linha";
+
+        const texto = document.createElement("span");
+        texto.textContent =
+          movimento.descricao + " (" + (movimento.categoria || "Sem categoria") + ", " + (movimento.conta || "Negócio") + ") - " +
+          (movimento.tipo === "receita" ? "+" : "-") +
+          formatar(movimento.valor);
+
+        const editar = document.createElement("button");
+        editar.textContent = "Editar";
+        editar.onclick = function() { editarMovimento(movimento.id); };
+
+        const apagar = document.createElement("button");
+        apagar.textContent = "Apagar";
+        apagar.onclick = function() { apagarMovimento(movimento.id); };
+
+        linha.appendChild(texto);
+
+        if (movimento.data) {
+          const dataTexto = document.createElement("span");
+          dataTexto.className = "data";
+          dataTexto.textContent = new Date(movimento.data).toLocaleDateString("pt-PT");
+          linha.appendChild(dataTexto);
+        }
+
+        linha.appendChild(editar);
+        linha.appendChild(apagar);
+
+        lista.prepend(linha);
+      });
+
+      renderResumo();
     }
 
     document.getElementById("formulario")
       .addEventListener("submit", function(event) {
         event.preventDefault();
 
-        const descricao =
-          document.getElementById("descricao").value.trim();
-
-        const valor =
-          Number(document.getElementById("valor").value);
-
-        const tipo =
-          document.getElementById("tipo").value;
+        const descricao = document.getElementById("descricao").value.trim();
+        const valor = Number(document.getElementById("valor").value);
+        const tipo = document.getElementById("tipo").value;
 
         if (!descricao || !Number.isFinite(valor) || valor <= 0) {
           alert("Introduz uma descrição e um valor válido.");
@@ -317,36 +700,158 @@ function carregarDados() {
           despesas += valor;
         }
 
-        const linha = document.createElement("div");
-        linha.style.borderLeft = tipo === "receita" ? "5px solid #16a34a" : "5px solid #dc2626";
-linha.style.paddingLeft = "12px";
-        linha.className = "linha";
+        movimentos.push({
+          id: Date.now(),
+          descricao: descricao,
+          valor: valor,
+          tipo: tipo,
+          categoria: document.getElementById("categoria").value,
+          conta: document.getElementById("conta").value,
+          data: new Date().toISOString()
+        });
 
-        const sinal = tipo === "receita" ? "+" : "−";
-        linha.textContent =
-          descricao + " — " + sinal + formatar(valor);
-
-        document.getElementById("lista").prepend(linha);
-guardarDados();
+        mostrarMovimentos();
+        guardarDados();
         atualizar();
         this.reset();
+        preencherCategorias();
       });
-function guardarDados() {
-  localStorage.setItem("kwanzaControl", JSON.stringify({
-    receitas: receitas,
-    despesas: despesas,
-    lista: document.getElementById("lista").innerHTML
-  }));
-}
 
-const dadosGuardados = localStorage.getItem("kwanzaControl");
-if (dadosGuardados) {
-  const dados = JSON.parse(dadosGuardados);
-  receitas = dados.receitas;
-  despesas = dados.despesas;
-  document.getElementById("lista").innerHTML = dados.lista;
-  atualizar();
-}
+    function editarMovimento(id) {
+      const movimento = movimentos.find(m => m.id === id);
+      if (!movimento) return;
+
+      const novaDescricao = prompt("Nova descrição:", movimento.descricao);
+      if (novaDescricao === null) return;
+
+      const novoValorTexto = prompt("Novo valor:", movimento.valor);
+      if (novoValorTexto === null) return;
+
+      const novoValor = Number(novoValorTexto.replace(",", "."));
+
+      if (!novaDescricao.trim() || !Number.isFinite(novoValor) || novoValor <= 0) {
+        alert("Introduz uma descrição e um valor válido.");
+        return;
+      }
+
+      const novoTipo = prompt("Escreve receita ou despesa:", movimento.tipo);
+      if (novoTipo === null) return;
+
+      const tipo = novoTipo.trim().toLowerCase();
+
+      if (tipo !== "receita" && tipo !== "despesa") {
+        alert("Tipo inválido.");
+        return;
+      }
+
+      if (movimento.tipo === "receita") {
+        receitas -= Number(movimento.valor);
+      } else {
+        despesas -= Number(movimento.valor);
+      }
+
+      movimento.descricao = novaDescricao.trim();
+      movimento.valor = novoValor;
+      if (movimento.tipo !== tipo) {
+        movimento.categoria = CATEGORIAS[tipo][CATEGORIAS[tipo].length - 1];
+      }
+      movimento.tipo = tipo;
+
+      if (tipo === "receita") {
+        receitas += novoValor;
+      } else {
+        despesas += novoValor;
+      }
+
+      mostrarMovimentos();
+      guardarDados();
+      atualizar();
+    }
+
+    function apagarMovimento(id) {
+      const movimento = movimentos.find(m => m.id === id);
+      if (!movimento) return;
+
+      if (!confirm("Tens a certeza que desejas apagar este movimento?")) {
+        return;
+      }
+
+      if (movimento.tipo === "receita") {
+        receitas -= Number(movimento.valor);
+      } else {
+        despesas -= Number(movimento.valor);
+      }
+
+      movimentos = movimentos.filter(m => m.id !== id);
+
+      mostrarMovimentos();
+      guardarDados();
+      atualizar();
+    }
+
+    preencherCategorias();
+    preencherFiltroCategorias();
+    document.getElementById("tipo").addEventListener("change", preencherCategorias);
+    document.getElementById("fMes").addEventListener("change", mostrarMovimentos);
+    document.getElementById("fCategoria").addEventListener("change", mostrarMovimentos);
+    document.getElementById("fConta").addEventListener("change", mostrarMovimentos);
+    document.getElementById("fPesquisa").addEventListener("input", mostrarMovimentos);
+
+    // Carregar dados guardados
+    const dadosGuardados = localStorage.getItem("kwanzaControl");
+
+    if (dadosGuardados) {
+      const dados = JSON.parse(dadosGuardados);
+
+      receitas = dados.receitas ?? 0;
+      despesas = dados.despesas ?? 0;
+      movimentos = Array.isArray(dados.movimentos) ? dados.movimentos : [];
+      fechos = Array.isArray(dados.fechos) ? dados.fechos : [];
+    }
+
+    mostrarMovimentos();
+    atualizar();
+    mostrarFechos();
+
+    // Ficha de cadastro
+    const FKEY = "kwanzacontrol_ficha";
+
+    const cadastro = document.getElementById("cadastro");
+    const app = document.getElementById("app");
+    const fichaForm = document.getElementById("fichaForm");
+
+    function abrirAplicacao() {
+      cadastro.hidden = true;
+      app.hidden = false;
+    }
+
+    function abrirCadastro() {
+      cadastro.hidden = false;
+      app.hidden = true;
+    }
+
+    fichaForm.addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      const ficha = {
+        nome: document.getElementById("f_nome").value,
+        negocio: document.getElementById("f_negocio").value,
+        tipo: document.getElementById("f_tipoNeg").value,
+        telefone: document.getElementById("f_tel").value,
+        provincia: document.getElementById("f_prov").value,
+        municipio: document.getElementById("f_mun").value
+      };
+
+      localStorage.setItem(FKEY, JSON.stringify(ficha));
+
+      abrirAplicacao();
+    });
+
+    if (localStorage.getItem(FKEY)) {
+      abrirAplicacao();
+    } else {
+      abrirCadastro();
+    }
   </script>
 </body>
 </html>
